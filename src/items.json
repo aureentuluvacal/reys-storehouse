@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Plate Armor",
+    "cost": 1500,
+    "requirements": ["Str 15"],
+    "features": ["18 AC", "Disadvantage on Stealth"]
+  },
+  {
+    "name": "Enhanced Studded Leather Armor",
+    "cost": 100,
+    "requirements": [],
+    "features": ["14 + Dex modifier AC", "Disadvantage on Stealth"]
+  }, 
+  {
+    "name": "Enhanced Breast Plate",
+    "cost": 500,
+    "requirements": [],
+    "features": ["15 + Dex modifier AC (max 2 Dex)", "Disadvantage on Stealth"]
+  },
+  {
+    "name": "Superior Shield",
+    "cost": 500,
+    "requirements": ["Proficiency in Shields"],
+    "features": ["+4 AC"]
+  },
+  {
+    "name": "Enhanced Halberd",
+    "cost": 120,
+    "requirements": ["Proficiency in Two-Handed"],
+    "features": ["1d10 + 2 Slashing Damage"]
+  },
+  {
+    "name": "Trident",
+    "cost": 10,
+    "requirements": [],
+    "features": ["1d6 Piercing Damage", "Thrown (Range 20)", "Versatile (1d8)"]
+  },
+  {
+    "name": "Enhanced Longbow",
+    "cost": 100,
+    "requirements": [],
+    "features": ["1d8 + 2 Piercing Damage", "Range 150/600"]
+  },
+  {
+    "name": "Heavy Crossbow",
+    "cost": 50,
+    "requirements": ["Str 12"],
+    "features": ["1d10 Piercing Damage", "Range 100/400"]
+  },
+  {
+    "name": "Flail",
+    "cost": 50,
+    "requirements": ["Str 14"],
+    "features": ["1d8 Bludgeoning", "DC 17 for shattering opponent's shield"]
+  }
+]

@@ -1,20 +1,42 @@
 import React, { Component } from 'react';
+import ReactTable from 'react-table'
+import 'react-table/react-table.css'
 import logo from './logo.svg';
 import './App.css';
+import Items from './items'
+
+const data = Items;
+
+const columns = [{
+  Header: 'Name',
+  accessor: 'name',
+  maxWidth: 300
+}, 
+{
+  Header: 'Cost',
+  accessor: "cost",
+  display: rowInfo => rowInfo.value + " GP",
+  maxWidth: 100
+}, 
+{
+  Header: 'Features',
+  id: 'features',
+  accessor: d => d.features.map(f => <div key={f}>{f}</div>)
+}, 
+{
+  Header: 'Requirements',
+  id: 'requirements',
+  accessor: d => d.requirements.map(r => <div key={r}>{r}</div>)
+}]
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      <ReactTable
+        data={data}
+        columns={columns}
+      />
+    )
   }
 }
 
