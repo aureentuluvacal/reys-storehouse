@@ -13,9 +13,8 @@ const columns = [{
   maxWidth: 300
 }, 
 {
-  Header: 'Cost',
+  Header: 'Cost (GP)',
   accessor: "cost",
-  display: rowInfo => rowInfo.value + " GP",
   maxWidth: 100
 }, 
 {
